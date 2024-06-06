@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('images/i.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Calculator Styles */
+.calculator {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 350px;
+}
+
+.calculator h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator label {
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.calculator input,
+.calculator select,
+.calculator button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.calculator input::placeholder {
+    color: #ccc;
+}
+
+.calculator input:focus,
+.calculator select:focus,
+.calculator button:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Dropdown Styling */
+.calculator select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.calculator select option {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+/* Dropdown Arrow */
+.calculator select::-ms-expand {
+    display: none;
+}
+
+.calculator select::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #fff;
+}
+
+.calculator button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator button:hover {
+    background-color: #45a049;
+}
+
+.calculator button:active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+}
+
+.calculator button:focus {
+    box-shadow: 0 0 10px #4CAF50;
+}
+
+/* Result Styles */
+.result h2 {
+    margin-top: 20px;
+    animation: fadeIn 1s;
+    font-size: 1.2em;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Scrollbar Styling */
+.calculator select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.calculator select::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.calculator select::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 8px;
+}
+
+.calculator select::-webkit-scrollbar-thumb:hover {
+    background: #45a049;
+}
