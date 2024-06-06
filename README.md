@@ -12,6 +12,7 @@
 
 This is a multipurpose calculator application capable of performing various calculations using PHP. The application supports basic arithmetic operations as well as more advanced mathematical functions.
 
+
 ## Features
 
 - Addition
