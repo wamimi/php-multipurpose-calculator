@@ -3,11 +3,11 @@
 ## Screenshots
 
 ### Main Interface
-![Main Interface](image.png)
+![Main Interface](images/image.png)
 
 ### Calculation Example
 
-![Dropdown menu](image-1.png)
+![Dropdown menu](images/image-1.png)
 
 
 This is a multipurpose calculator application capable of performing various calculations using PHP. The application supports basic arithmetic operations as well as more advanced mathematical functions.
